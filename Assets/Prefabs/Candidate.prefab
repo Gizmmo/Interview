@@ -11,9 +11,9 @@ GameObject:
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
   - 50: {fileID: 5000000}
-  - 61: {fileID: 6100000}
-  m_Layer: 10
-  m_Name: Door
+  - 58: {fileID: 5800000}
+  m_Layer: 0
+  m_Name: Candidate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.1484776, y: 20.3731289, z: .000732421875}
-  m_LocalScale: {x: 1.65499997, y: .25, z: 1}
+  m_LocalPosition: {x: -23.961422, y: -5.01401472, z: .0776367188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 3fab787d8d77c4f219ff6fe49713a1c4, type: 2}
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -57,7 +57,7 @@ MeshFilter:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!50 &5000000
 Rigidbody2D:
   m_ObjectHideFlags: 1
@@ -73,8 +73,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!61 &6100000
-BoxCollider2D:
+--- !u!58 &5800000
+CircleCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -82,8 +82,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 1, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Radius: .50000006
+  m_Center: {x: 5.96046448e-08, y: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

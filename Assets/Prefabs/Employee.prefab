@@ -12,8 +12,9 @@ GameObject:
   - 23: {fileID: 2300000}
   - 50: {fileID: 5000000}
   - 61: {fileID: 6100000}
-  m_Layer: 10
-  m_Name: Door
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: Employee
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 30.1484776, y: 20.3731289, z: .000732421875}
-  m_LocalScale: {x: 1.65499997, y: .25, z: 1}
+  m_LocalPosition: {x: 5.19763279, y: 3.80180407, z: .0776367188}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -43,7 +44,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 3fab787d8d77c4f219ff6fe49713a1c4, type: 2}
+  - {fileID: 2100000, guid: 98f7dae7b791347488912f695c7d70a1, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -67,7 +68,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
-  m_GravityScale: 0
+  m_GravityScale: 1
   m_FixedAngle: 1
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -84,6 +85,19 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: 1, y: 1}
   m_Center: {x: 0, y: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d192898f1fda94ed2b1f403f8e332a20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  lookAtPlayerDistance: {x: 7, y: 7}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
